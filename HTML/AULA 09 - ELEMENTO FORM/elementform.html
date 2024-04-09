@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forms em HTML</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Exemplo de formulário no HTML</h1>
+    </header>
+    <article>
+        <form action="#">
+            <label for="cNome" style="color: rgb(238, 220, 255); background-color: rgb(105, 30, 175); border-color: rgb(255, 255, 255);">Nome:</label><br/>
+            <input type="text" size=50 name="tNome" id="cNome" required="required" />
+            <br /><br />
+            <label for="time" style="color: rgb(238, 220, 255); background-color: rgb(105, 30, 175); border-color: rgb(255, 255, 255);">Selecione seu idioma:</label>
+            <select id="time" name="time">
+                <option value="">Português (Brasil)</option>
+                <option value="">Português (Portugal)</option>
+                <option value="">Inglês Americano</option>
+                <option value="">Inglês (Reino Unido)</option>
+                <option value="">Espanhol (Espanha)</option>
+                <option value="">Espanhol (América Latina)</option>
+                <option value="">Italiano</option>
+                <option value="">Francês</option>
+                <option value="">Alemão</option>
+                <option value="">Russo</option>
+                <option value="">Árabe</option>
+                <option value="">Grego</option>
+                <option value="">Turco</option>
+                <option value="">Norueguês</option>
+                <option value="">Sueco</option>
+                <option value="">Islandês</option>
+                <option value="">Finlandês</option>
+                <option value="">Dinamarquês</option>
+                <option value="">Chinês</option>
+                <option value="">Coreano</option>
+                <option value="">Tailandês</option>
+                <option value="">Persa</option>
+                <option value="">Japonês</option>
+            </select><br/><br/>
+            <label for="cCid" style="color: rgb(238, 220, 255); background-color: rgb(105, 30, 175); border-color: rgb(255, 255, 255);">Escolha seu País na lista:</label>
+            <input list="cidade" name="tCid" id="cCid" placeholder="Seu País"/>
+            <datalist id="cidade">
+                <option value="Argentina"></option>
+                <option value="Bolívia"></option>
+                <option value="Brasil"></option>
+                <option value="Canadá"></option>
+                <option value="Chile"></option>
+                <option value="Colômbia"></option>
+                <option value="Cuba"></option>
+                <option value="Equador"></option>
+                <option value="Estados Unidos"></option>
+                <option value="Guatemala"></option>
+                <option value="Guiana"></option>
+                <option value="México"></option>
+                <option value="Paraguai"></option>
+                <option value="Peru"></option>
+                <option value="Uruguai"></option>
+                <option value="Venezuela"></option>
+                <option value="Alemanha"></option>
+                <option value="Bélgica"></option>
+                <option value="Dinamarca"></option>
+                <option value="Espanha"></option>
+                <option value="Finlândia"></option>
+                <option value="França"></option>
+                <option value="Grécia"></option>
+                <option value="Irlanda"></option>
+                <option value="Islândia"></option>
+                <option value="Itália"></option>
+                <option value="Noruega"></option>
+                <option value="Polônia"></option>
+                <option value="Suécia"></option>
+                <option value="Suíça"></option>
+                <option value="Ucrânia"></option>
+                <option value="China"></option>
+                <option value="Coreia do Sul"></option>
+                <option value="Índia"></option>
+                <option value="Irã"></option>
+                <option value="Iraque"></option>
+                <option value="Japão"></option>
+                <option value="Paquistão"></option>
+            </datalist><br/><br/>
+            0
+            <input type="range" id="valor_01" name="valor_01" />
+            100 <br/><br/>
+            <input type="submit" value="Enviar" style="font-family: Arial, Helvetica, sans-serif;"/>
+        </form>
+    </article>
+    <footer>
+        <small>Instituto da Oportunidade Social</small>
+    </footer>
+</body>
+
+</html>
