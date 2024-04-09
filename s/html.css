@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    border: none;
+    top: 0;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font: normal 16px Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.btn {
+    background-color: #998a00;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.box-1 {
+    background-color: #000000;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0px 0px 10px #ff0000;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: solid;
+    padding: 20px;
+}
+
+.r {
+    border-color: #ffffff;
+    border-width: 2px;
+    box-shadow: 0px 0px 10px #ff0000;
+    text-shadow: 0px 0px 10px #ff0000;
+    font: bold;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: solid;
+    border-top-style: dotted;
+}
+
+.g {
+    border-color: #ffffff;
+    border-width: 2px;
+    box-shadow: 0px 0px 10px #00ff00;
+    text-shadow: 0px 0px 10px #00ff00;
+    font: bold;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: solid;
+    border-top-style: dotted;
+}
+
+.g2 {
+    border-color: #ffffff;
+    border-width: 2px;
+    box-shadow: 0px 0px 10px #00ff00;
+    text-shadow: 0px 0px 10px #00ff00;
+    font: bold;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: solid;
+}
+
+.b {
+    border-color: #ffffff;
+    border-width: 2px;
+    box-shadow: 0px 0px 10px #0000ff;
+    text-shadow: 0px 0px 10px #0000ff;
+    font: bold;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: solid;
+    border-top-style: dotted;
+}
+
+.b2 {
+    border-color: #ffffff;
+    border-width: 2px;
+    box-shadow: 0px 0px 10px #0000ff;
+    text-shadow: 0px 0px 10px #0000ff;
+    font: bold;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: solid;
+}
