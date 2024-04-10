@@ -1,11 +1,21 @@
 @charset "utf-8";
 
 * {
-    background-color: #49274A;
-    color: #F8EEE7;
+    background-color: #000000;
+    text-shadow: 0px 0px 5px #ff0000;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 article p {
-    background-color: #F4DECB;
-    color: black;
+    background-color: #000000;
+    box-shadow: 0px 0px 5px #f00;
+    border: solid;
+    border-color: #f00;
+    border-width: 1px;
+    color: rgb(255, 255, 255);
+}
+
+.o {
+    font-weight: 1000;
 }
