@@ -22,7 +22,7 @@ h2 {
 
 .col {
     float: left;
-    width: 32%;
+    width: 33.33%;
     padding: 8px;
     box-sizing: border-box;
 }
@@ -48,7 +48,7 @@ h2 {
 
 .price-box li {
     padding: 20px;
-    border-bottom: 20px solid #eee;
+    border-bottom: 30px solid #eee;
     text-align: center;
 }
 
