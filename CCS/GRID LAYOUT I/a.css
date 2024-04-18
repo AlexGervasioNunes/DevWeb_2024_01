@@ -51,7 +51,7 @@
 
 .wrapperiii {
     font-weight: 1000;
-    padding: 15px;
+    padding-top: 15px;
     font-size: 40px;
     display: grid;
     grid-template-columns: 2fr 4fr 2fr;
@@ -62,12 +62,13 @@
 }
 
 .wrapperiii>div {
-    background: #eee;
-    padding: 1em;
+    background: lightskyblue;
+    color: #fff;
 }
 
 .wrapperiii>div:nth-child(odd) {
-    background: lightblue;
+    background: lightcoral;
+    color: #fff;
 }
 
 .box1 {
@@ -83,4 +84,9 @@
 .box3 {
     grid-column: 2 / 4;
     grid-row: 3;
+}
+
+.box4 {
+    grid-column: 1;
+    grid-row: 2 / 4;
 }
