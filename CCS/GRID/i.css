@@ -43,7 +43,7 @@ h3{
 }
 
 .main-header h1 span {
-    color: #0d50b5;
+    color: #b50d0d;
 }
 
 .main-header p {
@@ -75,7 +75,7 @@ img {
 
 .btn {
     display: inline-block;
-    background: #0d50b5;
+    background: #b50d0d;
     color: #fff;
     padding: 0.8rem 1.8rem;
     margin-bottom: 15px;
