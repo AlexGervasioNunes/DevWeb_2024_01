@@ -73,7 +73,8 @@ img {
     background: #0d50b5;
     color: #fff;
     padding: 0.8rem 1.8rem;
-    margin-top: 2rem;
+    margin-bottom: 15px;
+    margin-left: 15px;
     cursor: pointer;
 }
 
