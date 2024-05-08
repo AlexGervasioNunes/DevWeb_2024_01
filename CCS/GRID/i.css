@@ -17,8 +17,13 @@ a {
     text-decoration: none;
 }
 
-.c {
-    image-resolution: 888;
+p{
+    margin: 15px;
+}
+
+h3{
+    text-align: center;
+    margin: 15px;
 }
 
 .main-header {
@@ -76,10 +81,6 @@ img {
     margin-bottom: 15px;
     margin-left: 15px;
     cursor: pointer;
-}
-
-.btn:hover {
-    opacity: 0.8;
 }
 
 @media (min-width: 768px) {
