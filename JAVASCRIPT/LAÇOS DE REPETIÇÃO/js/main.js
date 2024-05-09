@@ -1,18 +1,35 @@
 
-console.log('       - - - / / / - - -')
-console.log('      NÚMEROS. Do 1 ao 50.')
-console.log('       - - - / / / - - -')
+console.log(`       - - - / / / - - -`)
+console.log(`      NÚMEROS, do 1 ao 50.`)
+console.log(`       - - - / / / - - -`)
+
 let contador = 1;
 while (contador <= 50) {
     console.log(`Número ${contador}`);
     contador++;
 }
-console.log('       - - - / / / - - -')
-console.log('CONTAGEM REGRESSIVA, de 10 a 0.')
-console.log('       - - - / / / - - -')
-let cont = 10;
-while (cont >= 0) {
-    console.log(`Valor = ${cont}`);
-    cont--;
+
+console.log(`       - - - / / / - - -`)
+console.log(`CONTAGEM REGRESSIVA, de 10 a 0.`)
+console.log(`       - - - / / / - - -`)
+
+let i = 0,
+    text = '';
+do {
+    text += `Número ${i}\n`;
+    i++;
+} while (i < 11);
+console.log(text);
+
+console.log(`       - - - / / / - - -`)
+console.log(`       PARES, de 1 a 100.`)
+console.log(`       - - - / / / - - -`)
+
+function pares() {
+    for (var i = 0; i < 101; i++) {
+        if ((i % 2) == 0) {
+                        console.log('Número ' + i);
+        }
+    }
 }
-for (let i = 100; i > 0; i--) console.log(`Laço For número: ${i}`);
+pares();
