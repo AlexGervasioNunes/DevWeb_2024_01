@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"
+        src="./js/main.js" />
+    <title>JavaScript com HTML DOM - Parte 03</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="container text-center p-3 bg-light">
+            Métodos JavaScript
+        </h1>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section>
+        <h2 style="padding-left: 30px; text-align: center;" class="container text-center p-3 bg-light">
+            Método querySelector()
+        </h2>
+        <br>
+        <p style="padding-left: 150px; padding-right: 150px; text-align: center; font-weight: 600;">
+            O JavaScript QuerySelector é uma ferramenta extremamente útil para selecionar elementos no DOM com
+            simplicidade e eficiência. Ele permite realizar uma infinidade de operações de manipulação e interação com
+            os elementos de uma página web. Com o QuerySelector, podemos modificar estilos, conteúdos, adicionar ou
+            remover classes, realizar eventos e muito mais.
+        </p>
+        <br>
+        <p style="padding-left: 150px; padding-right: 150px; text-align: center; font-weight: 600;" id="paragraph">
+            Além disso, o JavaScript QuerySelector possui recursos avançados, como seleção com base em seletor CSS,
+            elementos pai, filhos e irmãos, e atributos dos elementos. Esses recursos adicionam flexibilidade e poder ao
+            desenvolvimento web com JavaScript.
+        </p>
+        <br>
+        <p style="padding-left: 150px; padding-right: 150px; text-align: center; font-weight: 600;">
+            Em resumo, o JavaScript QuerySelector é uma ferramenta indispensável para qualquer desenvolvedor web que
+            deseja criar interações dinâmicas e personalizadas em suas páginas. Selecione elementos no DOM com
+            facilidade e transforme suas aplicações web em experiências interativas e envolventes para os usuários.
+        </p>
+        <br>
+        <button class="btn btn-primary" onclick="Clique()" style="margin-left: 500px;">
+            Clique para ver o exemplo do querySelector().
+        </button>
+        <br>
+        <hr>
+        <br>
+    </section>
+    <main>
+    <section>
+            <h2 style="padding-left: 30px; text-align: center;" class="container text-center p-3 bg-light">
+                Método querySelectorAll()
+            </h2>
+            <br>
+            <p style="padding-left: 150px; padding-right: 150px; text-align: center; font-weight: 600;" id="li">
+                O método querySelectorAll é uma função incorporada em JavaScript que retorna uma NodeList estática (não uma matriz real) de elementos no documento que correspondem a um grupo de seletores de CSS específicos. A
+                lista
+                retornada incluirá todos os elementos descendentes que correspondem aos seletores fornecidos.
+            </p>
+            <br>
+            <p style="padding-left: 150px; padding-right: 150px; text-align: center; font-weight: 600;" id="li">
+                O querySelectorAll() recebe uma string em formato de seletor CSS e retorna uma nodelist com esses
+                elementos. A
+                linha document.querySelectorAll('.product-image') busca por todos os elementos com a classe
+                product-image. Logo,
+                quanto maior a DOM, maior o tempo de execução de cada uso desse método.
+            </p>
+            <br>
+            <p style="padding-left: 150px; padding-right: 150px; text-align: center; font-weight: 600;" id="li">
+                A função querySelectorAll() recebe um argumento de string contendo um seletor CSS e retorna um objeto NodeList, representando os elementos do documento que correspondem ao seletor. Se nenhum elemento coincide, a função retorna um objeto NodeList vazio. Se a string do seletor é inválida, querySelectorAll() lançará um exceção.
+            </p>
+            <br>
+            <button class="btn btn-primary" onclick="Click()" style="margin-left: 500px;">
+                Clique para ver o exemplo do querySelectorAll().
+            </button>
+            <br>
+    </section>
+</main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
