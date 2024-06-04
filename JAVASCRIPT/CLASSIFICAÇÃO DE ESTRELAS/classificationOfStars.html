@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sistema de Classificação</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form>
+            <select id="product-select" class="form-control custom-select">
+                <option value="0" disabled selected>Select A Movie...</option>
+                <option value="tslop">A Vida Secreta dos Bichos</option>
+                <option value="e">Elementos</option>
+                <option value="madagascar">Madagascar</option>
+                <option value="dm">Meu Malvado Favorito</option>
+                <option value="dm2">Meu Malvado Favorito 2</option>
+                <option value="dm3">Meu Malvado Favorito 3</option>
+                <option value="tpom">Os Penguins de Madagascar</option>
+                <option value="ww">Pica-Pau: O Filme</option>
+                <option value="fd">Procurando Nemo</option>
+                <option value="fd">Procurando Dory</option>
+            </select>
+            <input type="number" id="rating-control" class="form-control" step="0.1" max="5" placeholder="Rate 1 - 5" disabled />
+        </form>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Movie</th>
+                    <th>Year</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tpom">
+                    <td>Os Penguins de Madagascar</td>
+                    <td>2014</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="ww">
+                    <td>Pica-Pau: O Filme</td>
+                    <td>2017</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="madagascar">
+                    <td>Madagascar</td>
+                    <td>2005</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="dm3">
+                    <td>Meu Malvado Favorito 3</td>
+                    <td>2017</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="dm2">
+                    <td>Meu Malvado Favorito 2</td>
+                    <td>2013</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="tslop">
+                    <td>A Vida Secreta dos Bichos</td>
+                    <td>2016</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="e">
+                    <td>Elementos</td>
+                    <td>2023</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="fd">
+                    <td>Procurando Dory</td>
+                    <td>2016</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="fn">
+                    <td>Procurando Nemo</td>
+                    <td>2003</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="dm">
+                    <td>Meu Malvado Favorito</td>
+                    <td>2010</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
