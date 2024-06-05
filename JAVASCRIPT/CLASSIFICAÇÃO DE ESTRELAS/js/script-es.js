@@ -23,15 +23,15 @@ productSelect.addEventListener('change', (e) => {
 ratingControl.addEventListener('blur', (e) => {
     const rating = e.target.value;
     if (rating > 5) {
-        alert('Please, rate ONLY between 0 - 5!');
+        alert('¡Califique SÓLO entre 0 y 5 antes de continuar!');
         return;
     }
     if (rating == '') {
-        alert('You need to type something in the empty box to proceed!               Use your keyboard to type a number between 0 to 5.');
+        alert('¡Debes escribir algo en el campo vacío para continuar!                 Utilice su teclado para escribir un número entre 0 y 5.');
         return;
     }
     if (rating < 0) {
-        alert('You can´t give negative ratings to movies!');
+        alert('¡No se pueden poner valores negativos en este campo!');
         return;
     }
     ratings[product] = rating;
