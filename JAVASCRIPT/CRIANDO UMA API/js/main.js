@@ -35,3 +35,67 @@ const getData = () => {
 window.onload = function () {
     getData();
 };
+addUser.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    newUser = {
+        name: nameValue.value,
+        email: emailValue.value,
+    };
+    try {
+        let res = await fetch(url_api, {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify(newUser),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                let dataArr = [];
+                dataArr.push(data);
+                renderData(dataArr);
+                addUser.reset();
+            });
+    } catch (err) {
+        console.log(err);
+    }
+});
+usersList.addEventListener('click', async (e) => {
+    e.preventDefault();
+    let delButtonIsPressed = e.target.id == 'delete-post';
+    let editButtonIsPressed = e.target.id == 'edit-post';
+    let id = e.target.parentElement.dataset.id;
+    if (delButtonIsPressed) {
+        await fetch(`${url_api}/${id}`, {
+            method: 'DELETE',
+        })
+            .then((res) => res.json())
+            .then(() => location.reload());
+    }
+    console.log(e.target.parentElement.dataset.id)
+});
+if (editButtonIsPressed) {
+    const parent = e.target.parentElement;
+    let nameContent = parent.querySelector('.card-subtitle').textContent;
+    let emailContent = parent.querySelector('.card-text').textContent;
+    nameValue.value = nameContent;
+    emailValue.value = emailContent;
+}
+btnAdd.addEventListener('click', async (e) => {
+    e.preventDefault();
+    await fetch(`${url_api}/${id}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-type': 'application/json',
+        },
+        body: JSON.stringify({
+            name: nameValue.value,
+            email: emailValue.value,
+        }),
+    })
+        .then((res) => res.json())
+        .then(() => {
+            location.reload();
+            addUser.reset();
+        });
+});

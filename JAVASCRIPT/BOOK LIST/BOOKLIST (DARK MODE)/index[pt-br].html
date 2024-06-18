@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8" />
@@ -9,18 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Bücherliste</title>
+        <link rel="stylesheet" href="style.css">
+    <title>Lista de Livros</title>
 </head>
 
 <body>
     <div class="container mt-4">
         <h1 class="display-4 text-center">
-            <i class="fas fa-book-open text-primary"></i>Meine <span class="text-primary">Bücher</span><span
-                class="textprimary">Liste</span>
+            <i class="fas fa-book-open text-primary"></i> Minha <span class="text-primary">Lista</span><span
+                class="textprimary">de</span><span class="text-primary">Livros</span>
         </h1>
         <form id="book-form" class="form-control border-0">
             <div class="mb-3">
-                <label class="form-label" for="title">Titel</label>
+                <label class="form-label" for="title">Título</label>
                 <input type="text" id="title" class="form-control">
             </div>
             <div class="mb-3">
@@ -28,30 +29,28 @@
                 <input type="text" id="author" class="form-control">
             </div>
             <div class="mb-3">
-                <label class="form-label" for="isbn">ISBN-Nummer</label>
+                <label class="form-label" for="isbn">ISBN#</label>
                 <input type="text" id="isbn" class="form-control">
             </div>
             <div class="d-grid">
-                <input type="submit" value="Büch Hinzufügen" class="btn btn-primary mt3">
+                <input type="submit" value="Adicionar Livro" class="btn btn-primary mt3">
             </div>
         </form>
         <table class="table table-striped mt-5">
             <thead>
                 <tr>
-                    <th>Titel</th>
+                    <th>Título</th>
                     <th>Autor</th>
-                    <th>ISBN-Nummer</th>
+                    <th>ISBN#</th>
                 </tr>
                 <tbody id="book-list"></tbody>
             </thead>
         </table>
     </div>
-    <script src="./js/main-de.js"></script>
+    <script src="./js/main[pt-br].js"></script>
     <br>
     <hr>
     <br>
-    <h3 style="margin-left: 135px; font-weight: 700;">- - - / / / Übersetzen / / / - - -</h3>
-    <p style="margin-left: 135px; font-weight: 10;">Translate - Traduzir - Traducir - يترجم </p>
     <a href="index.html"><input type="submit" value="English" class="btn btn-primary" style="margin-left: 135px;"></a>
     <a href="index[pt-br].html"><input type="submit" value="Português" class="btn btn-primary" style="margin-left: 10;"></a>
     <a href="index-es.html"><input type="submit" value="Español" class="btn btn-primary" style="margin-left: 10;"></a>
@@ -61,7 +60,7 @@
     <br>
     <br>
     <br>
-    <a href="./BOOKLIST (DARK MODE)/index-de.html" style="margin-left: 135px;"><input type="submit" value="DUNKLER MODUS" class="btn btn-primary" style="margin-left: 10;"></a>
+    <a href="/JAVASCRIPT/BOOK LIST/index[pt-br].html" style="margin-left: 135px;"><input type="submit" value="Tema Claro" class="btn btn-primary" style="margin-left: 10;"></a>
 </body>
 
 </html>
